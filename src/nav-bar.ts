@@ -3,6 +3,12 @@ import { css, customElement, html, LitElement, property } from "lit-element";
 @customElement("nav-bar")
 export class NavBar extends LitElement {
   static styles = css`
+    nav {
+      margin: -8px;
+    }
+    a {
+      font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+    }
     *,
     ::before,
     ::after {
@@ -30,7 +36,8 @@ export class NavBar extends LitElement {
     */
 
     body {
-      margin: 0;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     /**
@@ -38,8 +45,7 @@ export class NavBar extends LitElement {
     */
 
     body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
-        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-family: Roboto, Helvetica, Arial, sans-serif;
     }
 
     /*
@@ -289,10 +295,7 @@ export class NavBar extends LitElement {
     }
 
     html {
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-        "Noto Color Emoji"; /* 1 */
+      font-family: Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.5; /* 2 */
     }
 
@@ -2091,7 +2094,7 @@ export class NavBar extends LitElement {
     body {
       font-size: 14px;
       background-color: white !important;
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .ant-picker-active-bar,
@@ -2147,6 +2150,7 @@ export class NavBar extends LitElement {
       text-transform: uppercase;
       color: #f47606;
       padding: 0.45rem 0;
+      font-family: "Roboto", Helvetica, Arial, sans-serif !important;
     }
 
     nav #menu-link li a:hover {
@@ -2155,7 +2159,7 @@ export class NavBar extends LitElement {
 
     bold {
       font-weight: 700;
-      font-family: "Roboto", sans-serif;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
     }
 
     .btn-orange {
@@ -2418,7 +2422,7 @@ export class NavBar extends LitElement {
     }
 
     .landing {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing .landing-table {
@@ -2491,7 +2495,7 @@ export class NavBar extends LitElement {
     .landing h4,
     .landing h5,
     .landing h6 {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing h1,
@@ -2525,7 +2529,7 @@ export class NavBar extends LitElement {
     }
 
     .landing p {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
       margin-bottom: 1rem;
       line-height: 1.375;
     }
@@ -2539,11 +2543,11 @@ export class NavBar extends LitElement {
     .landing-raw {
       color: #4a4a4a;
       padding-bottom: 40px !important;
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw p {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw a {
@@ -2607,7 +2611,7 @@ export class NavBar extends LitElement {
     .landing-raw div,
     .landing-raw li {
       font-size: 16px !important;
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw h1,
@@ -2616,7 +2620,7 @@ export class NavBar extends LitElement {
     .landing-raw h4,
     .landing-raw h5,
     .landing-raw h6 {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
       font-weight: 600 !important;
     }
 
@@ -2658,18 +2662,18 @@ export class NavBar extends LitElement {
     }
 
     .landing-raw p {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
       margin-bottom: 1rem;
       line-height: 1.375;
     }
 
     .landing-raw span {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw h2,
     .landing-raw h3 {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw h2,
@@ -3195,7 +3199,7 @@ export class NavBar extends LitElement {
               </div>
             </div>
             <ul
-              class="flex ml-auto items-baseline justify-center"
+              class="hidden ml-auto items-baseline justify-center"
               id="menu-link"
             >
               <li>

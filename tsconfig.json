@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "es2015",
+    "target": "es2018",
+    "module": "esnext",
     "moduleResolution": "node",
+    "noEmitOnError": true,
     "lib": ["es2017", "dom"],
+    "strict": true,
+    "esModuleInterop": false,
+    // "outDir": "lib",
+    "rootDir": "./",
     "experimentalDecorators": true
   },
   "include": ["./src/**/*.ts"]

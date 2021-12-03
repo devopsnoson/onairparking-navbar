@@ -28,7 +28,7 @@ let NavBar = class NavBar extends LitElement {
               </div>
             </div>
             <ul
-              class="flex ml-auto items-baseline justify-center"
+              class="hidden ml-auto items-baseline justify-center"
               id="menu-link"
             >
               <li>
@@ -81,6 +81,12 @@ let NavBar = class NavBar extends LitElement {
     }
 };
 NavBar.styles = css `
+    nav {
+      margin: -8px;
+    }
+    a {
+      font-family: "Roboto", Helvetica, Arial, sans-serif !important;
+    }
     *,
     ::before,
     ::after {
@@ -108,7 +114,8 @@ NavBar.styles = css `
     */
 
     body {
-      margin: 0;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     /**
@@ -116,8 +123,7 @@ NavBar.styles = css `
     */
 
     body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
-        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-family: Roboto, Helvetica, Arial, sans-serif;
     }
 
     /*
@@ -367,10 +373,7 @@ NavBar.styles = css `
     }
 
     html {
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-        "Noto Color Emoji"; /* 1 */
+      font-family: Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.5; /* 2 */
     }
 
@@ -2169,7 +2172,7 @@ NavBar.styles = css `
     body {
       font-size: 14px;
       background-color: white !important;
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .ant-picker-active-bar,
@@ -2225,6 +2228,7 @@ NavBar.styles = css `
       text-transform: uppercase;
       color: #f47606;
       padding: 0.45rem 0;
+      font-family: "Roboto", Helvetica, Arial, sans-serif !important;
     }
 
     nav #menu-link li a:hover {
@@ -2233,7 +2237,7 @@ NavBar.styles = css `
 
     bold {
       font-weight: 700;
-      font-family: "Roboto", sans-serif;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
     }
 
     .btn-orange {
@@ -2496,7 +2500,7 @@ NavBar.styles = css `
     }
 
     .landing {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing .landing-table {
@@ -2569,7 +2573,7 @@ NavBar.styles = css `
     .landing h4,
     .landing h5,
     .landing h6 {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing h1,
@@ -2603,7 +2607,7 @@ NavBar.styles = css `
     }
 
     .landing p {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
       margin-bottom: 1rem;
       line-height: 1.375;
     }
@@ -2617,11 +2621,11 @@ NavBar.styles = css `
     .landing-raw {
       color: #4a4a4a;
       padding-bottom: 40px !important;
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw p {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw a {
@@ -2685,7 +2689,7 @@ NavBar.styles = css `
     .landing-raw div,
     .landing-raw li {
       font-size: 16px !important;
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw h1,
@@ -2694,7 +2698,7 @@ NavBar.styles = css `
     .landing-raw h4,
     .landing-raw h5,
     .landing-raw h6 {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
       font-weight: 600 !important;
     }
 
@@ -2736,18 +2740,18 @@ NavBar.styles = css `
     }
 
     .landing-raw p {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
       margin-bottom: 1rem;
       line-height: 1.375;
     }
 
     .landing-raw span {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw h2,
     .landing-raw h3 {
-      font-family: "Roboto", sans-serif !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif !important;
     }
 
     .landing-raw h2,
